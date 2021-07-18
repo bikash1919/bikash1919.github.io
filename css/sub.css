@@ -1,0 +1,71 @@
+body{
+    height: 100vh;
+}
+
+main {
+    position: relative;
+}
+
+.sidenav {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 48px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--blue-dark);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+    caret-color: rgba(0,0,0,0);
+}
+
+.side-btn {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.topic-title {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding-top: 8px;
+    margin-left: 20px; 
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.topics {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.topics>a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: ease-in-out 0.2s;
+    white-space: nowrap;
+}
+
+.topics>a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: var(--blue-light);
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-top: 48px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
